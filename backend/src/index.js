@@ -13,7 +13,10 @@ dotenv.config();
 const __dirname=path.resolve();
 
 app.use(cors({
-  origin:'http://localhost:5173',
+  origin:[
+  "http://localhost:5173",
+  "https://chatapp-hgyz.onrender.com"
+],
   credentials:true
 }
 ))
